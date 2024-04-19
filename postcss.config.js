@@ -1,9 +1,9 @@
-const plugin = require("tailwindcss");
-const { __esModule } = require("vscode-json-languageserver");
+const tailwindcss = require("tailwindcss");
+const autoprefixer = require("autoprefixer");
+
 module.exports = {
-    plugins: {
-        tailwindcss: {},
-        autoprefixer: {},
-    }
+    plugins: [
+        tailwindcss,
+        autoprefixer
+    ]
 }
-  
