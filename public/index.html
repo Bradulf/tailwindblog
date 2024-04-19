@@ -7,16 +7,20 @@
     <link rel="stylesheet" href="css/output.css">
 </head>
 <body class="bg-teal-400 text-black">
-    <header class="text-3xl font-bold p-4 text-center">
-        My Teal Themed Blog, that's ! broke
+    <header class="bg-gray-800 text-white p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <div class="text-lg font-bold">
+                Big Dome Gnome
+            </div>
+            <nav>
+                <ul class="flex space-x-4">
+                    <li><a href="#" class="hover:text-gray-300">Home</a></li>
+                    <li><a href="#" class="hover:text-gray-300">About</a></li>
+                    <li><a href="#" class="hover:text-gray-300">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
-
-<!--    <div id="posts" hx-get="/posts" hx-trigger="load" class="p-4">-->
-<!--        &lt;!&ndash; HTMX will load content here on page load &ndash;&gt;-->
-<!--    </div>-->
-<!--<div class="bg-bright-teal text-black p-4">-->
-<!--    This is a div with custom bright teal background and white text. -->
-<!--</div>-->
     <div class="max-w-md mx-auto bg-white rounded-xl shadow-md overflow-hidden md:max-w-2xl">
         <div class="md:flex">
             <div class="md:flex-shrink-0">
@@ -38,8 +42,6 @@
         <div class="text-xl font-medium text-black">Are you sure?</div>
         <p class="text-slate-500">you are about to delete a post</p>
     </div>
-
-
     <script src="https://unpkg.com/htmx.org"></script>
 </body>
 </html>
